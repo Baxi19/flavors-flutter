@@ -15,11 +15,11 @@
 
 7 - Use a conditional statement to load the correct configurations for the current flavor.
 
-8 - Run your app using the desired flavor. For example, to run the app using the "dev" flavor, use the command flutter run --flavor dev.
+8 - Run your app using the desired flavor. For example, to run the app using the "dev" flavor, use the command `flutter run --flavor dev`.
 
 Here's the example code:
 
-In the config.dart file of the dev folder:
+In the `config.dart` file of the `dev` folder:
 ```dart
 class Config {
   final String apiUrl;
@@ -32,7 +32,7 @@ class Config {
 }
 ```
 
-In the config.dart file of the prod folder:
+In the `config.dart` file of the `prod` folder:
 ```dart
 class Config {
   final String apiUrl;
@@ -45,7 +45,7 @@ class Config {
 }
 ```
 
-In the main.dart file:
+In the `main.dart` file:
 ```dart
 import 'package:flutter/material.dart';
 import 'package:my_app/flavors/config.dart';
